@@ -651,7 +651,12 @@ footer {
 }
 .modal-close-button {
    position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    top: 8px;
+   padding: 0;
+   margin: 0;
    right: 8px;
    width: 30px;
    height: 30px;
@@ -673,4 +678,20 @@ footer {
    background-color: var(--white-colour);
    border: solid 1px var(--current-color);
    cursor: pointer;
+}
+
+.input{
+
+}
+.input:nth-child(1){
+   
+}
+.input:nth-child(2){
+
+}
+.input:nth-child(3){
+
+}
+textarea{
+   resize: none;
 }

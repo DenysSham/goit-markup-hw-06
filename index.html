@@ -581,6 +581,21 @@
       </footer>
       <div data-modal class="backdrop is-hidden">
          <div class="modal">
+            <form>
+               <h1>Оставьте свои данные, мы вам перезвоним</h1>
+            <label for="name">Имя</label>
+            <input class="input" name="name" id="name" required></input>
+            <label for="tel">Телефон</label>
+            <input class="input" type="tel" name="tel" id="tel" required>
+            <label for="email">Почта</label>
+            <input class="input" type="email" name="" id="email">
+            <label for="comments">Коментарий</label>
+            <textarea name="" id=""  rows="1" id="comments" placeholder="Введите текст"></textarea>
+            <input type="checkbox" name="" id="agree">
+            <label for="agree">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
+            
+            <button type="submit">Отправить</button>
+            </form>
             <button data-modal-close class="modal-close-button">
                <svg class="modal-close-icon" width="11px" height="11px">
                   <use href="./images/sprite.svg#close"></use>
