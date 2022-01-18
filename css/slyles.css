@@ -536,7 +536,7 @@ footer {
 }
 .footer-content {
    display: flex;
-   align-items: center;
+   align-items: baseline;
 }
 .logo-address {
    margin-right: 70px;
@@ -581,7 +581,9 @@ footer {
 .address-list:not(:last-child) {
    margin-bottom: 9px;
 }
-
+.join{
+   margin-right: 93px;
+}
 .join-us {
    display: inline-block;
    margin-bottom: 20px;
@@ -618,6 +620,71 @@ footer {
 .join:not(:last-child).footer-social {
    margin-right: 10px;
 }
+.footer-form{
+   display: flex;
+   align-items: flex-end;
+   
+}
+.footer-form-field{
+   display: flex;
+   flex-direction: column;
+   width: 358px;
+   height: 86px;
+   margin-right: 12px;
+}
+.footer-form input{
+   padding: 15px 16px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   box-sizing: border-box;
+   color: var(--white-colour);
+   background-color: var(--background);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+ }
+ .footer-form input::placeholder{
+   color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail-form{   
+   margin-bottom: 20px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.142;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--white-colour);
+}
+.footer-mail-form input{
+   
+}
+.footer-subscribe-btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   height: 50px;
+   padding: 10px 28px 10px 29px;
+
+   color: var(--white-colour);
+   background-color: var(--current-color);
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.87;
+   letter-spacing: 0.06em;
+
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border: none;
+   border-radius: 4px;
+}
+.subscribe-btn-icon{
+   fill: var(--white-colour);
+   margin-left: 10px;
+
+
+}
 /* modal window */
 .backdrop {
    position: fixed;
@@ -649,6 +716,15 @@ footer {
 .backdrop.is-hidden .modal{
    transform: translate(-50%, -50%) scale(0.1);
 }
+.form-title{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.15;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
 .modal-close-button {
    position: absolute;
    display: flex;
@@ -678,19 +754,6 @@ footer {
    background-color: var(--white-colour);
    border: solid 1px var(--current-color);
    cursor: pointer;
-}
-
-.input{
-
-}
-.input:nth-child(1){
-   
-}
-.input:nth-child(2){
-
-}
-.input:nth-child(3){
-
 }
 textarea{
    resize: none;
