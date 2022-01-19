@@ -635,7 +635,6 @@ footer {
 .footer-form input{
    padding: 15px 16px;
    border: 1px solid rgba(255, 255, 255, 0.3);
-   box-sizing: border-box;
    color: var(--white-colour);
    background-color: var(--background);
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -644,7 +643,7 @@ footer {
  .footer-form input::placeholder{
    color: rgba(255, 255, 255, 0.6);
 }
-.footer-mail-form{   
+.footer-mail-form {   
    margin-bottom: 20px;
    font-family: Roboto;
    font-style: normal;
@@ -703,10 +702,13 @@ footer {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%) scale(1);
-   min-width: 520px;
-   min-height: 580px;
+   min-width: 530px;
+   min-height: 583px;
+   padding: 40px;
    background-color: var(--white-colour);
    transition: transform 250ms var(--timing-function);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
 }
 .backdrop.is-hidden {
    opacity: 0;
@@ -717,6 +719,7 @@ footer {
    transform: translate(-50%, -50%) scale(0.1);
 }
 .form-title{
+   margin-bottom: 12px;
    font-family: Roboto;
    font-style: normal;
    font-weight: 700;
@@ -724,6 +727,111 @@ footer {
    line-height: 1.15;
    text-align: center;
    letter-spacing: 0.03em;
+}
+.form-label{
+   display: block;
+   margin-bottom: 4px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.01em;
+   color: var(--secondary-text-color);
+}
+
+.form-field{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 10px;
+}
+
+.form-field input {
+   padding: 12px 15px 12px 42px;
+   width: 450px;
+   height: 40px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   }
+.form-field textarea{
+   margin-bottom: 20px;
+   padding: 12px 16px;
+   width: 450px;
+   height: 120px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   }
+.form-field textarea::placeholder{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.01em;
+   color: rgba(117, 117, 117, 0.5);
+}
+.form-icon{
+   position: absolute;
+   top: 32px;
+   left: 15px;
+   fill: var(--primary-text-color);
+}
+.form-field:focus-within > .form-icon {
+   fill: var(--current-color);
+}
+.form-field:focus-within > .form-label {
+   color: var(--current-color);
+}
+.form-field:focus-within > .input {
+   outline: none;
+   border: 1px solid var(--current-color);
+}
+.form-field:focus-within > textarea {
+   outline: none;
+   border: 1px solid var(--current-color);
+}
+.checkbox {
+   position: absolute;
+   width: 1px;
+   height: 1px; 
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+.checkbox:checked + .confirm-policy-icon{
+   border-color: transparent;
+   background-color: var(--current-color);
+   background-image: url(../images/icons.svg#icon-check);
+   background-size: contain;
+   background-origin: border-box;
+}
+.confirm-policy-icon {
+   display: inline-block;
+   width: 16px;
+   height: 15px;
+   border: 2px solid var(--primary-text-color);
+   border-radius: 2px;
+}
+.form-policy-field{
+   position: relative;;
+}
+.policy-field {
+   display: inline-block;
+   padding: 0;
+   margin-bottom: 30px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: var(--secondary-text-color);
+}   
+.policy-link{
+   color: var(--current-color);
 }
 .modal-close-button {
    position: absolute;
@@ -756,5 +864,19 @@ footer {
    cursor: pointer;
 }
 textarea{
+   display: block;
    resize: none;
+}
+.form-submit-btn{
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+   width: 200px;
+   height: 50px;
+   padding: 10px 55px;
+   color: var(--white-colour);
+   background: #2196F3;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border: none;
+   border-radius: 4px;
 }
