@@ -851,17 +851,16 @@ footer {
    display: flex;
    align-items: center;
    justify-content: center;
-   top: 8px;
    padding: 0;
    margin: 0;
+   top: 8px;
    right: 8px;
    width: 30px;
    height: 30px;
-   border: solid 1px #000;
+   border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    background-color: var(--white-colour);
-   transition: background-color 250ms var(--timing-function);
-}
+   }
 .modal-close-icon {
    fill: #000;
    transition: fill 250ms var(--timing-function);
@@ -873,7 +872,6 @@ footer {
 .modal-close-button:hover,
 .modal-close-button:focus {
    background-color: var(--white-colour);
-   border: solid 1px var(--current-color);
    cursor: pointer;
 }
 textarea{
